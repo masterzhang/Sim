@@ -1,0 +1,12 @@
+body.content {
+  background-color: white;
+}
+body.content section {
+  background-color: white;
+  padding: 1rem 2rem;
+}
+body.content section h1 {
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=content.css.map */
