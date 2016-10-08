@@ -42,16 +42,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         </ul>
         <div class="page-nav">
             <div>
-            <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;',3,'...',array(
-                    	    'itemTag' => 'li',
-                    	    'textTag' => 'span',
-                    	    'currentClass' => 'disabled',
-                    	    'prevClass' => 'prev',
-                    	    'nextClass' => 'next',
-                    	    'wrapTag' => 'ul',
-                    	    'wrapClass' => 'pagination'
-                    	)); ?>
+ <?php $this->pageLink('<xt class="btn--one"><i class="iconfont icon-zuo text-base mr"></i><span>NEWER</span></xt>'); ?>
+<?php $this->pageLink('<xt class="btn--one"><span>OLDER</span><i class="iconfont icon-you text-base ml"></i></xt>','next'); ?>
             </div>
+            <div class="page-right">PAGE
+            <?php if($this->_currentPage>1) echo $this->_currentPage;  else echo 1;?> <span id="txt">OF</span> <?php echo   ceil($this->getTotal() / $this->parameter->pageSize); ?></div>
         </div>
     </section>
 <?php $this->need('footer.php'); ?>

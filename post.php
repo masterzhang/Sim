@@ -9,7 +9,7 @@
     <section>
             <h1><?php $this->title() ?></h1>
             <div>
-                <span><?php $this->date('F j, Y, g:i a'); ?> in&nbsp;</span>
+                <span><?php $this->date('M d,Y'); ?> in&nbsp;</span>
                 <span><?php $this->tags(', ', true, 'none'); ?>&nbsp;by&nbsp;</span>
                 <span><a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>&nbsp;</span>
                 <span><i class="iconfont">&#xe60d;</i></span>
@@ -20,8 +20,7 @@
             </div>
             <div class="share">
                 <div class="page">
-                    <a href="#">&lt;&nbsp;&nbsp;PREVIOUS</a>
-                    <a href="#">NEXT&nbsp;&nbsp;&gt;</a>
+                    <?php thePrev($this); ?>   <?php theNext($this); ?>
                 </div>
                 <div class="shareItems">
                     <div><i  class="iconfont">&#xe61b;</i></div>
