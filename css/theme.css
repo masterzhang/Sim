@@ -10,9 +10,9 @@ body {
 #progress {
   height: 2px;
   background-color: #FF494B;
-  -webkit-animation: pulse 2s;
-  -o-animation: pulse 2s;
-  animation: pulse 2s;
+  -webkit-animation: pulse 1s;
+  -o-animation: pulse 1s;
+  animation: pulse 1s;
   animation-fill-mode: forwards;
 }
 
@@ -89,7 +89,7 @@ article h1.title a {
   font-size: 2rem;
 }
 article h1.title a:hover {
-  color: #00CCCD;
+  color: #337ab7;
   text-decoration: none;
 }
 article div.author {
@@ -98,6 +98,8 @@ article div.author {
   font-size: 0.83rem;
   height: 1.5rem;
   line-height: 1.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 article div.author i {
   font-size: 1rem;
@@ -107,12 +109,12 @@ article div.author i {
 }
 article div .target {
   color: white;
-  padding: 0.2rem 0.4rem;
+  padding: 0rem 0.4rem;
   background-color: #FF494B;
   text-decoration: none;
   display: inline-block;
 }
-article div .target a{
+article div .target a {
   color: white;
 }
 article div.content {
@@ -317,51 +319,41 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
 .share .shareItems div:hover {
   cursor: pointer;
 }
+
 .page-nav {
-  text-align: center;
+  overflow: hidden;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.5rem;
 }
-.pagination {
-    display: inline-block;
-    padding-left: 0;
-    margin: 20px 0;
-    border-radius: 4px;
+.page-nav .page-left {
+  display: inline-block;
+  float: left;
 }
-.pagination > li {
-    display: inline;
+.page-nav .page-left a {
+  color: #7C7C8C;
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  border: 1px solid #7C7C8C;
+  margin-right: 1rem;
 }
-.page-nav .pagination > li > a, .page-nav .pagination > li > span {
-    color: #FF494B;
+.page-nav .page-left a .page-button {
+  height: 1.4rem;
+  line-height: 1.4rem;
 }
-.pagination > li > a, .pagination > li > span {
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    line-height: 1.42857143;
-    text-decoration: none;
-    border-top: 1px solid #FF494B;
-    border-bottom: 1px solid #FF494B;
-    border-left: 1px solid #FF494B;
-    background-color: #fff;
+.page-nav .page-left a .page-button i {
+  font-size: 0.5rem;
+  vertical-align: baseline;
 }
-.pagination > li >  span:hover, .pagination > li > span:focus,  .pagination > li > a:hover, .pagination > li > a:focus {
-    background-color: #FF494B;
-    color: white;
+.page-nav .page-left a .page-button span {
+  font-size: 0.5rem;
+  display: inline;
 }
-.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
-    cursor: not-allowed;
-    background-color: #fff;
-    border-color: #FF494B;
-    color: #FF494B;
+.page-nav .page-right {
+  display: inline-block;
+  float: right;
 }
-.pagination > li:first-child > a, .pagination > li:first-child > span {
-    margin-left: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-.pagination > li:last-child > a, .pagination > li:last-child > span {
-    margin-left: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-right: 1px solid #FF494B;
-}
+
 /*# sourceMappingURL=theme.css.map */
