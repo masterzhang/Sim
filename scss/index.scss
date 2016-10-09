@@ -1,8 +1,8 @@
 .home section{
-  ul {
+  div.articles {
     margin: 0rem;
     padding: 0rem;
-    & li {
+    & div.article {
       margin: 0rem 0rem 1rem;
       padding: 0rem;
       list-style: none;

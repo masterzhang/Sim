@@ -16,9 +16,9 @@ $this->need('header.php');
 <div class="main">
     <?php $this->need('title.php'); ?>
     <section>
-        <ul>
+        <div class="articles">
             <?php while ($this->next()): ?>
-                <li>
+                <div class="article">
                     <article>
                         <h1 class="title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
                         <div class="author">
@@ -38,9 +38,9 @@ $this->need('header.php');
                             <a href="<?php $this->permalink() ?>">阅读全文</a>
                         </div>
                     </article>
-                </li>
+                </div>
             <?php endwhile; ?>
-        </ul>
+        </div>
         <div class="page-nav">
             <div class="page-left">
                 <?php $this->pageLink('<div class="page-button"><i class="iconfont">&#xe61e;</i><span>Newer</span></div>'); ?>
