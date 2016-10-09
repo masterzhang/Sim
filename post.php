@@ -24,7 +24,7 @@
                 </div>
                 <div class="shareItems">
                     <div class="share-item"><i  class="iconfont">&#xe61b;</i></div>
-                    <div class="share-item"><a class="jiathis_button_tsina"><i  class="iconfont">&#xe619;</i></a></div>
+                    <div class="share-item"><a href="http://service.weibo.com/share/share.php?url=<?php $this->permalink() ?>/&appkey=<?php $this->options->title(); ?>/&title=<?php $this->title() ?>"><i  class="iconfont">&#xe619;</i></a></div>
                 </div>
             </div>
             <?php $this->need('comments.php'); ?>
