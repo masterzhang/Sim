@@ -23,8 +23,8 @@
                     <?php thePrev($this); ?>   <?php theNext($this); ?>
                 </div>
                 <div class="shareItems">
-                    <div><i  class="iconfont">&#xe61b;</i></div>
-                    <div><i  class="iconfont">&#xe619;</i></div>
+                    <div class="share-item"><i  class="iconfont">&#xe61b;</i></div>
+                    <div class="share-item"><a class="jiathis_button_tsina"><i  class="iconfont">&#xe619;</i></a></div>
                 </div>
             </div>
             <?php $this->need('comments.php'); ?>

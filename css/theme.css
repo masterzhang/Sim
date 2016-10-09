@@ -308,7 +308,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   line-height: 4rem;
   text-align: right;
 }
-.share .shareItems div {
+.share .shareItems .share-item {
   display: inline;
   padding: 0.5rem 1rem;
   border: 1px solid;
@@ -316,7 +316,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   color: #7C7C8C;
   margin-left: 1rem;
 }
-.share .shareItems div:hover {
+.share .shareItems .share-item:hover {
   cursor: pointer;
 }
 
