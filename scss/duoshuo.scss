@@ -71,6 +71,27 @@ $reply: #B6B6B6;
           background: #9CB0DB;
         }
       }
+      li.ds-tab {
+        a.ds-current {
+          border: none;
+          background: none;
+        }
+      }
+      li.ds-post {
+        border: none;
+        background-color: $bgColor;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        &:hover {
+          background-color: $bgHover;
+        }
+      }
+      .ds-powered-by {
+        display: none;
+      }
+      .ds-comments {
+        border:none;
+      }
     }
     .ds-replybox {
       background-color: #F3F3F3;
@@ -115,3 +136,4 @@ $reply: #B6B6B6;
     }
   }
 }
+
