@@ -29,7 +29,7 @@ $this->need('header.php');
                             <span><i class="iconfont">&#xe617;</i></span>
                             <span class="time"><?php $this->date('Y-m-d'); ?></span>
                             <span><i class="iconfont">&#xe60d;</i></span>
-                            <span class="time">20</span>
+                            <span class="time"><?php get_post_view($this) ?></span>
                         </div>
                         <div class="content">
                             <?php $this->content('Continue Reading...'); ?>
