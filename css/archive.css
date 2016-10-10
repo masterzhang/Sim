@@ -5,16 +5,19 @@ body.archive section {
 body.archive section h1 {
   margin: 1rem 1rem;
   color: black;
+  font-size: 2rem;
 }
 body.archive section h3 {
   margin: 0.5rem 1rem;
   color: black;
+  font-size: 1.5rem;
 }
 body.archive section h4 {
   margin: 0.2rem 1rem;
+  font-size: 1.2rem;
 }
 body.archive section .section {
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 body.archive section ul li {
   list-style: none;
@@ -22,10 +25,10 @@ body.archive section ul li {
   line-height: 2rem;
   overflow: hidden;
   padding-right: 0.1rem;
+  font-size: 1rem;
 }
 body.archive section ul li i {
-  font-size: 0.5rem;
-  vertical-align: middle;
+  font-size: 1rem;
 }
 body.archive section ul li a {
   display: inline-block;
