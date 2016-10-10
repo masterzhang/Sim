@@ -22,6 +22,7 @@
     <link href="<?php $this->options->themeUrl('css/index.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/content.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/archive.css'); ?>" type="text/css" rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('css/tags.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/duoshuo.css'); ?>" type="text/css" rel="stylesheet">
     <script src="<?php $this->options->themeUrl('js/jquery-3.1.0.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/base.js'); ?>"></script>

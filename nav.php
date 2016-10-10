@@ -13,13 +13,13 @@
             </a>
         </li>
         <li>
-            <a href="#" class="navLink">
+            <a href="<?php $this->options->siteUrl(); ?>index.php/archive.html" class="navLink">
                 <i class="iconfont headerIcon">&#xe612;</i>
                 <span>归档</span>
             </a>
         </li>
         <li>
-            <a href="#" class="navLink">
+            <a href="<?php $this->options->siteUrl(); ?>index.php/tags.html" class="navLink">
                 <i class="iconfont headerIcon">&#xe613;</i>
                 <span>标签</span>
             </a>

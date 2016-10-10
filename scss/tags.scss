@@ -7,7 +7,7 @@ body {
       padding: 2rem;
       & form {
         position: relative;
-        height: 2.5rem;
+        height: 2.65rem;
         line-height: 2.5rem;
         border: 1px solid $formColor;
         #wrap {
@@ -19,23 +19,23 @@ body {
         #keyword {
           width: 100%;
           height: 2.5rem;
-          margin: 0;
+          margin: 0rem;
           padding: 0.5rem;
           border: none;
           position: absolute;
-          left: 0;
-          top:0;
+          left: 0rem;
+          top:0rem;
           font-size: 1rem;
         }
         .submit {
           width: 4.5rem;
           height: 2.5rem;
-          margin: 0;
-          padding: 0;
+          margin: 0rem;
+          padding: 0rem;
           border: none;
           position: absolute;
-          right: 0;
-          top: 0;
+          right: 0rem;
+          top: 0rem;
           font-size: 1rem;
           background-color: #E7E7E7;
           border-left: 1px solid $formColor;
@@ -44,4 +44,3 @@ body {
     }
   }
 }
-
