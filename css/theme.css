@@ -383,4 +383,39 @@ p > code {
   color: #FF494B;
 }
 
+pre {
+  max-height: 10rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #f0f0f0;
+  border-spacing: 0;
+}
+table thead tr {
+  background-color: #f7f7f7;
+}
+table thead tr th {
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 2px solid #89c3eb;
+  border-left-width: 0;
+  border-top-width: 0;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2rem;
+  padding: 0 0.5rem;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+table tbody td {
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  border-left-width: 0;
+  border-top-width: 0;
+  text-align: left;
+  line-height: 2rem;
+  padding: 0 0.5rem;
+}
+
 /*# sourceMappingURL=theme.css.map */

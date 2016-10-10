@@ -376,4 +376,42 @@ p > code {
   font-size: 80%;
   color: $targetColor;
 }
+pre {
+  max-height: 10rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #f0f0f0;
+  border-spacing: 0;
+  thead {
+    tr {
+      background-color: #f7f7f7;
+      th {
+        border-right: 1px solid #f0f0f0;
+        border-bottom: 2px solid #89c3eb;
+        border-left-width: 0;
+        border-top-width: 0;
+        font-weight: 700;
+        text-align: center;
+        line-height: 2rem;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+  tbody {
+    tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+    td {
+      border-right: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+      border-left-width: 0;
+      border-top-width: 0;
+      text-align: left;
+      line-height: 2rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
 
