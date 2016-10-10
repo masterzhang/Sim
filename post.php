@@ -1,12 +1,12 @@
 <?php
- if (!defined('__TYPECHO_ROOT_DIR__')) exit;
- $this->need('header.php');
- ?>
-<body class="content">
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php');
+?>
+    <body class="content">
 <?php $this->need('nav.php'); ?>
-<div class="main">
-    <?php $this->need('title.php'); ?>
-    <section>
+    <div class="main">
+        <?php $this->need('title.php'); ?>
+        <section>
             <h1><?php $this->title() ?></h1>
             <div>
                 <span><?php $this->date('M d,Y'); ?> in&nbsp;</span>
@@ -20,22 +20,29 @@
             </div>
             <div class="share">
                 <div class="page">
-                    <?php thePrev($this); ?>   <?php theNext($this); ?>
+                    <?php thePrev($this); ?><?php theNext($this); ?>
                 </div>
                 <div class="shareItems">
+                    <div class="ds-share" data-thread-key="<?php echo $this->cid; ?>"
+                         data-title="<?php $this->title() ?>" data-images="" data-content="<?php $this->content(); ?>"
+                         data-url="<?php $this->permalink() ?>">
 
-                        <a class="share-item" target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php $this->permalink() ?>&title=<?php $this->title() ?>&site=<?php $this->options->title(); ?>" data-tooltip="分享至QQ空间" title="分享至QQ空间"  data-toggle="tooltip" data-placement="top">
-                            <i  class="iconfont">&#xe61b;</i>
+                        <a class="ds-weibo share-item" href="javascript:void(0);" data-service="weibo" title="分享至微博"
+                           data-toggle="tooltip" data-placement="top">
+                            <i class="iconfont">&#xe619;</i>
                         </a>
-
-
-                        <a class="share-item" href="http://service.weibo.com/share/share.php?url=<?php $this->permalink() ?>/&appkey=<?php $this->options->title(); ?>/&title=<?php $this->title() ?>" target="_blank" data-tooltip="分享至微博"  title="分享至微博"  data-toggle="tooltip" data-placement="top">
-                            <i  class="iconfont">&#xe619;</i>
+                        <a class="ds-qzone share-item" href="javascript:void(0);" data-service="qzone" title="分享至QQ空间"
+                           data-toggle="tooltip" data-placement="top">
+                            <i class="iconfont">&#xe61b;</i>
                         </a>
-
+                        <a class="ds-wechat share-item" href="javascript:void(0);" data-service="wechat" title="分享至朋友圈"
+                           data-toggle="tooltip" data-placement="top">
+                            <i class="iconfont">&#xe604;</i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <?php $this->need('comments.php'); ?>
         </section>
-</div>
+    </div>
 <?php $this->need('footer.php'); ?>

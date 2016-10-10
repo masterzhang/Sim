@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0rem;
+  padding: 0;
   background-color: white;
   font-family: "Microsoft YaHei";
   overflow-x: hidden;
@@ -17,12 +17,12 @@ body {
 }
 
 nav ul {
-  margin: 4rem 0rem 0rem;
-  padding: 0rem;
+  margin: 4rem 0 0;
+  padding: 0;
 }
 nav ul li {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -31,8 +31,8 @@ nav ul li {
   width: 100%;
   height: 100%;
   z-index: 999;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
 }
 
 a {
@@ -46,13 +46,13 @@ a:hover {
 header {
   background: white;
   position: fixed;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
   width: 100%;
   border-bottom: 1px solid #EEF2F8;
-  -webkit-box-shadow: 0px 1px 4px #EEF2F8;
-  -moz-box-shadow: 0px 1px 4px #EEF2F8;
-  box-shadow: 0px 1px 4px #EEF2F8;
+  -webkit-box-shadow: 0 1px 4px #EEF2F8;
+  -moz-box-shadow: 0 1px 4px #EEF2F8;
+  box-shadow: 0 1px 4px #EEF2F8;
   color: #A1A7AF;
   height: 3rem;
   line-height: 3rem;
@@ -81,7 +81,7 @@ footer div {
 }
 
 article h1.title {
-  margin: 0rem 0rem 0.5rem;
+  margin: 0 0 0.5rem;
 }
 article h1.title a {
   color: black;
@@ -93,7 +93,7 @@ article h1.title a:hover {
   text-decoration: none;
 }
 article div.author {
-  margin: 0rem 0rem 0.5rem;
+  margin: 0 0 0.5rem;
   color: #7C7C8C;
   font-size: 0.83rem;
   height: 1.5rem;
@@ -109,7 +109,7 @@ article div.author i {
 }
 article div .target {
   color: white;
-  padding: 0rem 0.4rem;
+  padding: 0 0.4rem;
   background-color: #FF494B;
   text-decoration: none;
   display: inline-block;
@@ -118,7 +118,7 @@ article div .target a {
   color: white;
 }
 article div.content {
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
 article div.footer {
   border-top: 2px solid #EEF2F8;
@@ -158,12 +158,12 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   z-index: 100;
 }
 .tools ul {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0;
+  padding: 0;
 }
 .tools ul li {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .tools ul li div {
@@ -198,7 +198,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   }
 
   #progress {
-    margin-top: 0rem;
+    margin-top: 0;
   }
 
   .share {
@@ -221,7 +221,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   }
 
   #progress {
-    margin-top: 0rem;
+    margin-top: 0;
   }
 
   .share {
@@ -259,7 +259,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
     width: 100%;
   }
   100% {
-    width: 0%;
+    width: 0;
   }
 }
 .tag {
@@ -344,7 +344,7 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
 }
 .page-nav .pagination li a:hover, .page-nav .pagination li a:focus, .page-nav .pagination li span:hover, .page-nav .pagination li span:focus {
   background-color: #FF494B;

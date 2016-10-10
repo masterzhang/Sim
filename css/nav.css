@@ -4,7 +4,7 @@
     height: 100%;
     position: fixed;
     left: 0rem;
-    top: 0rem;
+    top: 0;
     overflow: auto;
     z-index: 1;
     overflow-x: hidden;
@@ -64,11 +64,11 @@
     margin-bottom: 0.5rem;
   }
   nav .left_mark {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 0rem;
-    left: 0rem;
+    top: 0;
+    left: 0;
   }
   nav .left_mark i {
     font-size: 3rem;
@@ -82,7 +82,7 @@
     height: 100%;
     position: fixed;
     left: 0rem;
-    top: 0rem;
+    top: 0;
     overflow: auto;
     z-index: 1;
     overflow-x: hidden;
@@ -98,7 +98,7 @@
     display: block;
     text-decoration: none;
     margin-top: 1.5rem;
-    padding-left: 0rem;
+    padding-left: 0;
     text-align: center;
   }
   nav li .navLink i {
@@ -111,8 +111,8 @@
     display: none;
   }
   nav li .navLastLink {
-    margin-top: 0rem;
-    padding-left: 0rem;
+    margin-top: 0;
+    padding-left: 0;
     text-align: center;
   }
   nav li .navLastLink .navLastLineLink {
@@ -127,7 +127,7 @@
   }
   nav li .navLastLink .navLastLineLink {
     display: block;
-    margin-right: 0rem;
+    margin-right: 0;
   }
   nav li .blogName {
     display: none;
@@ -139,11 +139,11 @@
     margin-bottom: 0.5rem;
   }
   nav .left_mark {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 0rem;
-    left: 0rem;
+    top: 0;
+    left: 0;
   }
   nav .left_mark i {
     font-size: 3rem;
@@ -157,7 +157,7 @@
     height: 100%;
     position: fixed;
     left: -15rem;
-    top: 0rem;
+    top: 0;
     overflow: auto;
     z-index: 1;
     overflow-x: hidden;
@@ -217,11 +217,11 @@
     margin-bottom: 0.5rem;
   }
   nav .left_mark {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 0rem;
-    left: 0rem;
+    top: 0;
+    left: 0;
   }
   nav .left_mark i {
     font-size: 3rem;
@@ -231,7 +231,7 @@
 }
 @keyframes navOut {
   from {
-    left: 0rem;
+    left: 0;
   }
   to {
     left: -15rem;
@@ -242,7 +242,7 @@
     left: -15rem;
   }
   to {
-    left: 0rem;
+    left: 0;
   }
 }
 

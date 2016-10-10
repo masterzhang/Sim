@@ -14,7 +14,7 @@ body.archive section h4 {
   margin: 0.2rem 1rem;
 }
 body.archive section .section {
-  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
 }
 body.archive section ul li {
   list-style: none;
