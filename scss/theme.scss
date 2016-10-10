@@ -5,7 +5,7 @@ $authorColor: #7C7C8C;
 $linkColor: #337ab7;
 $navBg: #2C2B3D;
 body {
-  margin: 0rem;
+  margin: 0;
   padding: 0rem;
   background-color: white;
   font-family: "Microsoft YaHei";
@@ -306,47 +306,50 @@ nav {
       border-radius: 0.2rem;
       color: $authorColor;
       margin-left: 1rem;
-      a {
-        color: $authorColor;
-        text-decoration: none;
+      color: $authorColor;
+      text-decoration: none;
+      i {
+        font-size: 1.1rem;
       }
     }
   }
 }
 
 .page-nav {
-  overflow: hidden;
-  line-height: 2.5rem;
-  height: 2.5rem;
-  font-size: 0.5rem;
-  .page-left {
+  text-align: center;
+  .pagination {
     display: inline-block;
-    float: left;
-    a {
-      color: $authorColor;
-      display: inline-block;
-      padding: 0.1rem 0.4rem;
-      border-radius: 0.2rem;
-      text-decoration: none;
-      border: 1px solid $authorColor;
-      margin-right: 1rem;
-      .page-button {
-        height: 1.4rem;
-        line-height: 1.4rem;
-        i {
-          font-size: 0.5rem;
-          vertical-align: baseline;
+    padding-left: 0;
+    li {
+      display: inline;
+      a, span {
+        font-weight: bold;
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-right: 0.5rem;
+        line-height: 1.42857143;
+        color: $targetColor;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #ddd;
+        &:hover, &:focus {
+          background-color: $targetColor;
+          color: #fff;
         }
-        span {
-          font-size: 0.5rem;
-          display: inline;
+      }
+      &.disabled {
+        a, span {
+          color: #fff;
+          background-color: $targetColor;
+          &:hover, &:focus {
+            cursor: not-allowed;
+          }
         }
       }
     }
-  }
-  .page-right {
-    display: inline-block;
-    float: right;
   }
 }
 
@@ -374,8 +377,4 @@ p > code {
   font-size: 80%;
   color: $targetColor;
 }
-
-
-
-
 
