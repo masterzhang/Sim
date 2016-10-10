@@ -37,10 +37,10 @@ $content = $db->fetchRow($sql);
 
 if ($content) {
 $content = $widget->filter($content);
-$link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">NEXT&nbsp;&nbsp;&gt;</a>';
+$link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '" data-toggle="tooltip" data-placement="top">下一篇&nbsp;&nbsp;&gt;</a>';
 echo $link;
 } else {
-$link = '<a href="#" title="没有更多">NEXT&nbsp;&nbsp;&gt;</a>';
+$link = '<a href="#" title="没有更多" data-toggle="tooltip" data-placement="top">NEXT&nbsp;&nbsp;&gt;</a>';
 echo $link;
 }
 }
@@ -66,10 +66,10 @@ $content = $db->fetchRow($sql);
 
 if ($content) {
 $content = $widget->filter($content);
-$link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">&lt;&nbsp;&nbsp;PREVIOUS</a>';
+$link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '"  data-toggle="tooltip" data-placement="top">&lt;&nbsp;&nbsp;上一篇</a>';
 echo $link;
 } else {
-$link = '<a href="#" title="没有更多">&lt;&nbsp;&nbsp;PREVIOUS</a>';
+$link = '<a href="#" title="没有更多"  data-toggle="tooltip" data-placement="top">&lt;&nbsp;&nbsp;PREVIOUS</a>';
 echo $link;
 }
 }

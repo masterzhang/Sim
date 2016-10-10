@@ -23,9 +23,16 @@
                     <?php thePrev($this); ?>   <?php theNext($this); ?>
                 </div>
                 <div class="shareItems">
-                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">右侧的 Tooltip</button>
-                    <div class="share-item"><a target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php $this->permalink() ?>&title=<?php $this->title() ?>&site=<?php $this->options->title(); ?>" data-tooltip="分享至QQ空间"  data-toggle="tooltip"><i  class="iconfont">&#xe61b;</i></a></div>
-                    <div class="share-item"><a href="http://service.weibo.com/share/share.php?url=<?php $this->permalink() ?>/&appkey=<?php $this->options->title(); ?>/&title=<?php $this->title() ?>" target="_blank" data-tooltip="分享至微博"  data-toggle="tooltip"><i  class="iconfont">&#xe619;</i></a></div>
+
+                        <a class="share-item" target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php $this->permalink() ?>&title=<?php $this->title() ?>&site=<?php $this->options->title(); ?>" data-tooltip="分享至QQ空间" title="分享至QQ空间"  data-toggle="tooltip" data-placement="top">
+                            <i  class="iconfont">&#xe61b;</i>
+                        </a>
+
+
+                        <a class="share-item" href="http://service.weibo.com/share/share.php?url=<?php $this->permalink() ?>/&appkey=<?php $this->options->title(); ?>/&title=<?php $this->title() ?>" target="_blank" data-tooltip="分享至微博"  title="分享至微博"  data-toggle="tooltip" data-placement="top">
+                            <i  class="iconfont">&#xe619;</i>
+                        </a>
+
                 </div>
             </div>
             <?php $this->need('comments.php'); ?>
