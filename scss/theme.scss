@@ -304,9 +304,8 @@ nav {
       padding: 0.5rem 1rem;
       border: 1px solid;
       border-radius: 0.2rem;
-      color: $authorColor;
+      color: $authorColor !important;
       margin-left: 1rem;
-      color: $authorColor;
       text-decoration: none;
       i {
         font-size: 1.1rem;

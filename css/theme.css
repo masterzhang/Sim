@@ -314,9 +314,8 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   padding: 0.5rem 1rem;
   border: 1px solid;
   border-radius: 0.2rem;
-  color: #7C7C8C;
+  color: #7C7C8C !important;
   margin-left: 1rem;
-  color: #7C7C8C;
   text-decoration: none;
 }
 .share .shareItems .share-item i {
