@@ -125,6 +125,8 @@ article {
       background-color: $targetColor;
       text-decoration: none;
       display: inline-block;
+      min-width: 2.5rem;
+      text-align: center;
       a {
         color: white;
       }
@@ -263,6 +265,8 @@ nav {
   border: 1px solid $targetColor;
   margin-bottom: 1rem;
   text-decoration: none;
+  min-width: 3rem;
+  text-align: center;
   &:hover {
     text-decoration: none;
     background-color: $targetColor;
