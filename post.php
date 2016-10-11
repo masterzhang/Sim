@@ -21,7 +21,7 @@ $this->need('header.php');
                 <span class="time"><?php get_post_view($this) ?></span>
             </div>
             <div>
-                <?php $this->content(); ?>
+                <?php  $this->content() ?>
             </div>
             <div class="share">
                 <div class="page">
@@ -29,7 +29,7 @@ $this->need('header.php');
                 </div>
                 <div class="shareItems">
                     <div class="ds-share" data-thread-key="<?php echo $this->cid; ?>"
-                         data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content(); ?>'
+                         data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content() ?>'
                     '
                     data-url="<?php $this->permalink() ?>">
 
