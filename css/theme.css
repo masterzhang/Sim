@@ -275,8 +275,28 @@ nav li .navLink:hover, nav li .navLastLineLink:hover {
   text-decoration: none;
   min-width: 3rem;
   text-align: center;
+  margin-right: 1rem;
 }
 .tag:hover {
+  text-decoration: none;
+  background-color: #FF494B;
+  color: white;
+}
+
+body.link .links a {
+  display: inline-block;
+  border-radius: 0.2rem;
+  color: #FF494B;
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid #FF494B;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  min-width: 3rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+body.link .links a:hover {
   text-decoration: none;
   background-color: #FF494B;
   color: white;

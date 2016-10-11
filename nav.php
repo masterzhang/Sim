@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="navLink">
+            <a href="<?php $this->options->siteUrl(); ?>index.php/links.html" class="navLink">
                 <i class="iconfont headerIcon">&#xe614;</i>
                 <span>友链</span>
             </a>
@@ -40,7 +40,7 @@
             <div class="navLastLink">
                 <a href="https://github.com/masterzhang" class="navLastLineLink"><i class="iconfont headerIcon">&#xe60b;</i></a>
                 <a href="http://weibo.com/u/2956140087?topnav=1&wvr=6&topsug=1&is_hot=1" class="navLastLineLink"><i class="iconfont headerIcon">&#xe619;</i></a>
-                <a href="#" class="navLastLineLink"><i class="iconfont headerIcon">&#xe616;</i></a>
+                <a href="<?php $this->options->siteUrl(); ?>index.php/tags.html" class="navLastLineLink"><i class="iconfont headerIcon">&#xe616;</i></a>
             </div>
         </li>
     </ul>

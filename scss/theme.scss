@@ -4,6 +4,24 @@ $targetColor: #FF494B;
 $authorColor: #7C7C8C;
 $linkColor: #337ab7;
 $navBg: #2C2B3D;
+@mixin link_tag_style {
+  display: inline-block;
+  border-radius: 0.2rem;
+  color: $targetColor;
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid $targetColor;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  min-width: 3rem;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    background-color: $targetColor;
+    color: white;
+  }
+  margin-right: 1rem;
+}
 body {
   margin: 0;
   padding: 0;
@@ -257,20 +275,15 @@ nav {
 }
 
 .tag {
-  display: inline-block;
-  border-radius: 0.2rem;
-  color: $targetColor;
-  background-color: white;
-  padding: 0.5rem;
-  border: 1px solid $targetColor;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  min-width: 3rem;
-  text-align: center;
-  &:hover {
-    text-decoration: none;
-    background-color: $targetColor;
-    color: white;
+  @include link_tag_style();
+}
+body {
+  &.link{
+    & .links {
+      a {
+        @include link_tag_style();
+      }
+    }
   }
 }
 
