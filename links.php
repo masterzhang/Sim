@@ -28,7 +28,7 @@ $this->need('header.php');
                             </div>
                             <div class="shareItems">
                                 <div class="ds-share" data-thread-key="<?php echo $this->cid; ?>"
-                                     data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content(); ?>''
+                                     data-title="<?php $this->title() ?>" data-images="" data-content=''
                                      data-url="<?php $this->permalink() ?>">
                                     <a class="ds-weibo share-item" href="javascript:void(0);" data-service="weibo" title="分享至微博"
                                        data-toggle="tooltip" data-placement="top">

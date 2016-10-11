@@ -51,16 +51,6 @@ $this->need('header.php');
             <div/>
             <?php endif; ?>
         </div>
-        <!--
-        <div class="page-nav">
-            <div class="page-left">
-                <?php $this->pageLink('<div class="page-button"><i class="iconfont">&#xe61e;</i><span>Newer</span></div>'); ?>
-                <?php $this->pageLink('<div class="page-button"><span>Older</span><i class="iconfont">&#xe61f;</i></div>', 'next'); ?>
-            </div>
-            <div class="page-right">PAGE
-                <?php if ($this->_currentPage > 1) echo $this->_currentPage; else echo 1; ?> <span
-                    id="txt">OF</span> <?php echo ceil($this->getTotal() / $this->parameter->pageSize); ?></div>
-        </div>-->
         <div class="page-nav">
                 <?php $this->pageNav('&lt;', '&gt;', 3, '...', array(
                     'itemTag' => 'li',

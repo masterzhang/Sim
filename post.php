@@ -29,7 +29,7 @@ $this->need('header.php');
                 </div>
                 <div class="shareItems">
                     <div class="ds-share" data-thread-key="<?php echo $this->cid; ?>"
-                         data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content() ?>'
+                         data-title="<?php $this->title() ?>" data-images="" data-content=''
                     '
                     data-url="<?php $this->permalink() ?>">
 
