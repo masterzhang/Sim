@@ -31,7 +31,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="navLink">
+            <a href="<?php $this->options->siteUrl(); ?>index.php/about.html" class="navLink">
                 <i class="iconfont headerIcon">&#62;_</i>
                 <span>关于</span>
             </a>

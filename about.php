@@ -12,53 +12,42 @@ $this->need('header.php');
     <div class="main">
         <?php $this->need('title.php'); ?>
         <section>
-            <h1><?php $this->title() ?></h1>
+            <h1>关于本站</h1>
             <div id="timeLine">
-                        <ul class="article">
-                            <li>
-                                <section class="event">
-                                    <div class="message">
-                                        <div class="message-content">
-                                            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-                                        </div>
-                                        <div class="message-icon">
+                <ul class="article">
+                    <?php $category = $this->widget('Widget_Archive@category', 'pageSize=1000&type=category', 'mid=7');
+                    $n = 1;
+                    while ($category->next()): ?>
+                        <li>
+                            <section class="event">
+                                <div class="message">
+                                    <div class="message-content">
+                                        <?php $category->content('Continue Reading...'); ?>
+                                    </div>
+                                    <div class="message-icon">
+                                        <?php if ($n % 2 == 0): ?>
                                             <i class="iconfont">&#xe620;</i>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        &nbsp;
-                                        <div class="icon">
-                                            <i class="iconfont">&#xe60d;</i>
-                                        </div>
-                                    </div>
-                                    <div class="time">
-                                        <div class="time-tag">2016年10月11日</div>
-                                    </div>
-                                </section>
-                            </li>
-                            <li>
-                                <section class="event">
-                                    <div class="message">
-                                        <div class="message-content">
-                                            内容内容内容内容内容内容内容内容内容内容内容
-                                        </div>
-                                        <div class="message-icon">
+                                        <?php else: ?>
                                             <i class="iconfont">&#xe621;</i>
-                                        </div>
+                                        <?php endif; ?>
                                     </div>
-                                    <div class="line">
-                                        &nbsp;
-                                        <div class="icon">
-                                            <i class="iconfont">&#xe60d;</i>
-                                        </div>
+                                </div>
+                                <div class="line">
+                                    &nbsp;
+                                    <div class="icon">
+                                        <i class="iconfont">&#xe60d;</i>
                                     </div>
-                                    <div class="time">
-                                        <div class="time-tag">2016年10月11日</div>
-                                    </div>
-                                </section>
-                            </li>
-                        </ul>
-                    </div>
+                                </div>
+                                <div class="time">
+                                    <div class="time-tag"><?php $category->date('Y年m月d日'); ?></div>
+                                </div>
+                            </section>
+                        </li>
+                        <?php
+                        $n += 1;
+                    endwhile; ?>
+                </ul>
+            </div>
             <?php $this->need('comments.php'); ?>
         </section>
     </div>

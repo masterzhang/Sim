@@ -29,25 +29,26 @@ $this->need('header.php');
                 </div>
                 <div class="shareItems">
                     <div class="ds-share" data-thread-key="<?php echo $this->cid; ?>"
-                         data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content(); ?>''
-                         data-url="<?php $this->permalink() ?>">
+                         data-title="<?php $this->title() ?>" data-images="" data-content='<?php $this->content(); ?>'
+                    '
+                    data-url="<?php $this->permalink() ?>">
 
-                        <a class="ds-weibo share-item" href="javascript:void(0);" data-service="weibo" title="分享至微博"
-                           data-toggle="tooltip" data-placement="top">
-                            <i class="iconfont">&#xe619;</i>
-                        </a>
-                        <a class="ds-qzone share-item" href="javascript:void(0);" data-service="qzone" title="分享至QQ空间"
-                           data-toggle="tooltip" data-placement="top">
-                            <i class="iconfont">&#xe61b;</i>
-                        </a>
-                        <a class="ds-wechat share-item" href="javascript:void(0);" data-service="wechat" title="分享至朋友圈"
-                           data-toggle="tooltip" data-placement="top">
-                            <i class="iconfont">&#xe604;</i>
-                        </a>
-                    </div>
+                    <a class="ds-weibo share-item" href="javascript:void(0);" data-service="weibo" title="分享至微博"
+                       data-toggle="tooltip" data-placement="top">
+                        <i class="iconfont">&#xe619;</i>
+                    </a>
+                    <a class="ds-qzone share-item" href="javascript:void(0);" data-service="qzone" title="分享至QQ空间"
+                       data-toggle="tooltip" data-placement="top">
+                        <i class="iconfont">&#xe61b;</i>
+                    </a>
+                    <a class="ds-wechat share-item" href="javascript:void(0);" data-service="wechat" title="分享至朋友圈"
+                       data-toggle="tooltip" data-placement="top">
+                        <i class="iconfont">&#xe604;</i>
+                    </a>
                 </div>
             </div>
-            <?php $this->need('comments.php'); ?>
-        </section>
+    </div>
+<?php $this->need('comments.php'); ?>
+    </section>
     </div>
 <?php $this->need('footer.php'); ?>

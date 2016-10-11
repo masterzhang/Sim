@@ -29,6 +29,9 @@
             $(".up").fadeIn(1000);
         }
     });
+    $(function() {
+        FastClick.attach(document.body);
+    });
 </script>
 <script>
 	$(function () { $("[data-toggle='tooltip']").tooltip(); });

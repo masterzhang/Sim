@@ -29,6 +29,7 @@
     <script src="<?php $this->options->themeUrl('js/jquery-3.1.0.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/base.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php $this->options->themeUrl('js/fastclick.js'); ?>"></script>
     <!--[if lt IE 9]>
     <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="http://cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
