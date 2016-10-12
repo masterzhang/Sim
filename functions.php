@@ -12,6 +12,8 @@ function themeConfig($form) {
     $form->addInput($WeiBo);
     $aboutMid = new Typecho_Widget_Helper_Form_Element_Text('aboutMid', NULL, NULL, _t('站点历史分类的Mid'), _t('站点历史分类的Cid，可以进入【管理->分类->选择你要作为站点历史的分类->点击该分类->在地址的最后你可以找到到该id】'));
     $form->addInput($aboutMid);
+    $doushuo = new Typecho_Widget_Helper_Form_Element_Text('duoshuo', NULL, NULL, _t('多说后台的short_name'), _t('多说后台的short_name.不设置则不开启评论.可以进入多说后台【工具->获取代码->通用代码->在第七行获取】'));
+    $form->addInput($doushuo);
     $time = new Typecho_Widget_Helper_Form_Element_Text('time', NULL, '2016/10/12', _t('博客成立时间'), _t('在这里填入博客的成立时间,格式要求，完整如填入“2015/06/06 00:00:00”或者只填写年月日“2015/06/06”。不填则不进行计时'));
     $form->addInput($time);
 
@@ -26,13 +28,6 @@ function themeConfig($form) {
     $form->addInput($sidebarBlock->multiMode());
 }
 
-
-/*
-function themeFields($layout) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO'));
-    $layout->addItem($logoUrl);
-}
-*/
 function theNext($widget, $default = NULL)
 {
 $db = Typecho_Db::get();

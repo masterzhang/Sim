@@ -5,8 +5,14 @@
 	<div class="ds-thread" data-thread-key="<?php echo $this->cid;?>" data-title="<?php echo $this->title;?>" data-author-key="<?php echo $this->authorId;?>" data-url=""></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<?php
+$options = Helper::options();
+$short_name =$options->duoshuo;
+if ($short_name):
+?>
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"mastercoder"};
+
+var duoshuoQuery = {short_name:"<?php echo $short_name;?>"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
@@ -17,7 +23,7 @@ var duoshuoQuery = {short_name:"mastercoder"};
 	})();
 	</script>
 <!-- 多说公共JS代码 end -->
-
+<?php endif; ?>
 <?php else: ?>
 <h4><?php _e('评论已关闭'); ?></h4>
 <?php endif; ?>
