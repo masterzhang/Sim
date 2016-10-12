@@ -153,6 +153,10 @@ nav li .navLink, nav li .navLastLineLink {
 nav li .navLink:hover, nav li .navLastLineLink:hover {
   color: #FF494B;
 }
+nav li .actived {
+  color: #FF494B;
+  font-weight: bold;
+}
 
 .tools {
   position: fixed;

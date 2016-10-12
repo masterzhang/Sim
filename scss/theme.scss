@@ -185,8 +185,13 @@ nav {
         color: $targetColor;
       }
     }
+    & .actived {
+      color: $targetColor;
+      font-weight: bold;
+    }
   }
 }
+
 
 .tools {
   position: fixed;
