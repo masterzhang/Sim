@@ -2,7 +2,7 @@
 /**
  * 关于
  *
- * @package Delay
+ * @package custom
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
@@ -15,7 +15,7 @@ $this->need('header.php');
             <h1>关于本站</h1>
             <div id="timeLine">
                 <ul class="article">
-                    <?php $category = $this->widget('Widget_Archive@category', 'pageSize=1000&type=category', 'mid=5');
+                    <?php $category = $this->widget('Widget_Archive@category', 'pageSize=1000&type=category', 'mid=7');
                     $n = 1;
                     while ($category->next()): ?>
                         <li>

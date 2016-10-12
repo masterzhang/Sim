@@ -2,7 +2,7 @@
 /**
  * 搜索结果
  *
- * @package Delay
+ * @package custom
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
