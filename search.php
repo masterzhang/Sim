@@ -1,11 +1,8 @@
 <?php
 /**
- * 一个兑现约定的皮肤，打败拖延症
+ * 搜索结果
  *
- * @package delay
- * @author 张华焱
- * @version 0.1
- * @link http://typecho.org
+ * @package Delay
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
