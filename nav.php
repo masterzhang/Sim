@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <li>
-            <a href="#"><img src="<?php $this->options->themeUrl('images/icon.jpg'); ?>" class="navIcon"></a>
+            <a href="#"><img src="<?php $this->options->UserIcon();?>" class="navIcon"></a>
         </li>
         <li>
             <span class="blogName"><?php $this->options->title() ?></span>
@@ -38,8 +38,8 @@
         </li>
         <li>
             <div class="navLastLink">
-                <a href="https://github.com/masterzhang" class="navLastLineLink" target="_blank"><i class="iconfont headerIcon">&#xe60b;</i></a>
-                <a href="http://weibo.com/u/2956140087?topnav=1&wvr=6&topsug=1&is_hot=1" class="navLastLineLink" target="_blank"><i class="iconfont headerIcon">&#xe619;</i></a>
+                <a href="<?php $this->options->GitHub();?>" class="navLastLineLink" target="_blank"><i class="iconfont headerIcon">&#xe60b;</i></a>
+                <a href="<?php $this->options->WeiBo();?>" class="navLastLineLink" target="_blank"><i class="iconfont headerIcon">&#xe619;</i></a>
                 <a href="<?php $this->options->siteUrl(); ?>index.php/tags.html" class="navLastLineLink"><i class="iconfont headerIcon">&#xe616;</i></a>
             </div>
         </li>

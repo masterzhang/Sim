@@ -15,7 +15,10 @@ $this->need('header.php');
             <h1>关于本站</h1>
             <div id="timeLine">
                 <ul class="article">
-                    <?php $category = $this->widget('Widget_Archive@category', 'pageSize=1000&type=category', 'mid=7');
+                    <?php
+                    $options = Helper::options();
+                    $query = 'mid='.$options->aboutMid;
+                    $category = $this->widget('Widget_Archive@category', 'pageSize=1000&type=category',$query);
                     $n = 1;
                     while ($category->next()): ?>
                         <li>

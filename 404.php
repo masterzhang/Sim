@@ -14,7 +14,7 @@ $this->need('header.php');
     <section>
         <h1>404</h1>
         <div>
-            <p>您访问的页面，已经被我吃了，不如看看其他的吧~(～￣▽￣)～~(～￣▽￣)～~(～￣▽￣)～</p>
+            <p>您访问的页面，已经被我吃了，不如看看其他的吧~(～￣▽￣)～~(～￣▽￣)～~(～￣▽￣)～<?php echo $mid = $this->options->aboutMid(); ?></p>
         </div>
     </section>
     <?php $this->need('footer.php'); ?>

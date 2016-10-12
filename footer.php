@@ -32,6 +32,7 @@
     $(function() {
         FastClick.attach(document.body);
     });
+    document.body.addEventListener('touchstart', function () { });
 </script>
 <script>
 	$(function () { $("[data-toggle='tooltip']").tooltip(); });

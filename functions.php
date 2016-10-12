@@ -4,6 +4,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO'));
     $form->addInput($logoUrl);
+    $UserIcon = new Typecho_Widget_Helper_Form_Element_Text('UserIcon', NULL, NULL, _t('用户头像地址'), _t('在这里填入一个图片URL地址, 用于显示博主的头像'));
+    $form->addInput($UserIcon);
+    $GitHub = new Typecho_Widget_Helper_Form_Element_Text('GitHub', NULL, NULL, _t('GitHub地址'), _t('在这里填入GitHub地址'));
+    $form->addInput($GitHub);
+    $WeiBo = new Typecho_Widget_Helper_Form_Element_Text('WeiBo', NULL, NULL, _t('微博地址'), _t('在这里填入微博地址'));
+    $form->addInput($WeiBo);
+    $aboutMid = new Typecho_Widget_Helper_Form_Element_Text('aboutMid', NULL, NULL, _t('站点历史分类的Mid'), _t('站点历史分类的Cid，可以进入【管理->分类->选择你要作为站点历史的分类->点击该分类->在地址的最后你可以找到到该id】'));
+    $form->addInput($aboutMid);
     
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
     array('ShowRecentPosts' => _t('显示最新文章'),

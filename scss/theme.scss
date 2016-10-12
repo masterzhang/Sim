@@ -184,6 +184,9 @@ nav {
       &:hover {
         color: $targetColor;
       }
+      &:active {
+        color: $targetColor;
+      }
     }
     & .actived {
       color: $targetColor;
@@ -434,5 +437,6 @@ table {
     }
   }
 }
+
 
 

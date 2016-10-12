@@ -7,7 +7,7 @@
             <span><?php $this->options->title() ?></span>
         </div>
         <div class="headIcon">
-            <img src="<?php $this->options->themeUrl('images/icon.jpg'); ?>">
+            <img src="<?php $this->options->UserIcon();?>">
         </div>
     </header>
     <div id="progress"></div>
