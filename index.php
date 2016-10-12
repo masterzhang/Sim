@@ -1,11 +1,12 @@
 <?php
 /**
- * 一个兑现约定的皮肤，打败拖延症
+ * 主题名为Delay，为什么起这个名字呢。好吧，说起来都是拖延症惹的祸，说好的做主题，拖了3,4个月，到了现在才迟迟到来。打败拖延症从这个主题开始。初次发布，可能还有很多不足，喜欢的朋友可以到我发GitHub上获取更新。
+ * https://github.com/masterzhang
  *
- * @package delay
+ * @package Delay
  * @author 张华焱
- * @version 0.1
- * @link http://typecho.org
+ * @version 1.0
+ * @link http://www.mastercoder.cn/
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
