@@ -12,7 +12,9 @@ function themeConfig($form) {
     $form->addInput($WeiBo);
     $aboutMid = new Typecho_Widget_Helper_Form_Element_Text('aboutMid', NULL, NULL, _t('站点历史分类的Mid'), _t('站点历史分类的Cid，可以进入【管理->分类->选择你要作为站点历史的分类->点击该分类->在地址的最后你可以找到到该id】'));
     $form->addInput($aboutMid);
-    
+    $time = new Typecho_Widget_Helper_Form_Element_Text('time', NULL, '2016/10/12', _t('博客成立时间'), _t('在这里填入博客的成立时间,格式要求，完整如填入“2015/06/06 00:00:00”或者只填写年月日“2015/06/06”。不填则不进行计时'));
+    $form->addInput($time);
+
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
     array('ShowRecentPosts' => _t('显示最新文章'),
     'ShowRecentComments' => _t('显示最近回复'),
