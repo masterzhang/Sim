@@ -32,12 +32,17 @@
     $(function () {
         FastClick.attach(document.body);
     });
-    document.body.addEventListener('touchstart', function () {});
+    var sidebar = document.getElementById('sidebar');
+    sidebar.addEventListener('touchmove', function(event) {
+          //如果这个元素的位置内只有一个手指的话
+        if (event.targetTouches.length == 1) {
+    　　　　 event.stopPropagation();
+            }
+    }, false);
     <?php
     $options = Helper::options();
     if ($options->time):?>
-    (function show_date_time() {
-        setInterval(show_date_time, 1000);
+    function show_date_time() {
         var BirthDay = new Date("<?php $this->options->time();?>");
         var today = new Date();
         var timeold = today.getTime() - BirthDay.getTime();
@@ -48,7 +53,8 @@
         var minsold = Math.floor(60 * (e_hrsold - hrsold));
         var seconds = Math.floor(60 * (e_minsold - minsold));
         $('#life').text(daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒");
-    }());
+    };
+    setInterval(show_date_time, 1000);
     <?php endif;?>
 </script>
 <script>
